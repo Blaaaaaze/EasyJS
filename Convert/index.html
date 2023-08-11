@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="main"> Перевод валют </h1>
+    </header>
+    <main>
+        <div>
+            <div class="inCenter">
+            <form>
+                <p> <input type="number" placeholder="Введите сумму денег" id="enterForm" class="input">
+                
+                <select id="input" class="variable">
+                    <option value="RUB">Рубли</option>
+                    <option value="USD">Доллары</option>
+                    <option value="EUR">Евро</option>
+                </select>
+
+                <button id="convert" type="button">Конвертировать</button>
+
+                <input type="text" placeholder="" readonly id="result" class="input">
+                <select id="output" class="variable">
+                    <option value="RUB">Рубли</option>
+                    <option value="USD">Доллары</option>
+                    <option value="EUR">Евро</option>
+                </select>
+            </p>
+            </form>
+        </div>
+    </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
