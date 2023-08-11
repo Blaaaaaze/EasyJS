@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is number?</title>
+    <style>
+        body {
+            background-color: rgb(41, 211, 143);
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="toCenter">
+            <h1>Угадай число</h1>
+
+            <form>
+                <p>
+                    <input type="number" placeholder="Введите число" id="input" class="input">
+                    <button type="button" id="btn" class="conf">Проверить</button>
+                </p>
+            </form>
+        </div>
+        <div>
+            <h2 class="toCenter">Индикатор</h2>
+            <div class="box" id="colour">
+            </div>
+
+
+        </div>
+
+        <div class="modal-container" id="modal"> 
+            <div class="modal-content">
+                <p class="modaltxt">Поздравляю!
+                    Ты отгадал число</p>
+              <button class="close" id="close" onclick="window.location.reload();">Ура!</button>
+            </div>
+          </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
